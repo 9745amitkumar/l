@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>form</title>
+  <link rel="stylesheet" href="aa.css">
+</head>
+
+<body>
+  <h2>Register</h2>
+  <form>
+    First Name: <input type="text" placeholder="amit" required>
+    Last Name:<input type="text" placeholder="kumar" required>
+    <p>
+      <label for="male">male</label>
+      <input id="male" type="radio" name="gender" value="male">
+      <label for="female">female</label>
+      <input id="female" type="radio" name="gender" value="female">
+
+      <label for="other">other</label>
+      <input id="other" type="radio" name="gender" value="other">
+
+    </p>
+    <div>
+      <label>Email:
+        <input type="email" name="email" placeholder="email" required>
+      </label>
+      <label>Password:
+        <input type="password" name="password" pattern=".{5,10}" required>
+
+      </label>
+    </div>
+    <div>
+      <label>Birthday:
+        <select>
+          <option>month</option>
+          <option>jan</option>
+        </select>
+        <select></select>
+        <select></select>
+      </label>
+
+    </div>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
